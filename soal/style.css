@@ -99,3 +99,64 @@ p span{
     background-color: blue;
     color: white;
 }
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background: red;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kontak{
+    background: #000;
+    color: #fff;
+    padding: 60px 80px;
+}
+.kontak h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.grup{
+    display: flex;
+    flex-direction: column;
+}
+.long button:hover{
+    background: darkred;
+}
+.grup label{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.grup input,
+.long textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+.long{
+    grid-column:span 2;
+}
+.kontak button{
+    grid-column: span 2;
+    width: 200px;
+    margin: 8px auto;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: red;
+    font-size: 15px;
+    cursor: pointer;
+}
