@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button id="toTop" class="tombol">TOP</button>
     <header class="atas">
         <div class="logo">
             <h3><span>TOKO</span>online</h3>
@@ -35,7 +36,6 @@
         </div>
         </div>
         <img src="WhatsApp_Image_2026-01-29_at_13.03.34-removebg-preview.png" class="uk">
-
     </div>
     <br>
     <h1 class="produk">PRODUK KAMI</h1>
@@ -96,26 +96,34 @@
         <form class="contact">
             <div class="grup">
                <label>Nama lengkap</label>
-               <input type="text" id="Nama lengkap" placeholder="nama lengkap">
+               <input type="text" id="nama" placeholder="nama lengkap">
             </div>
             <div class="grup">
                 <label>ALAMAT EMAIL</label>
-                <input type="email" id="ALAMAT EMAIL" placeholder="ALAMAT EMAIL">
+                <input type="email" id="email" placeholder="ALAMAT EMAIL">
             </div>
             <div class="grup">
                 <label>No handphone</label>
-                <input type="number" id="ALAMAT EMAIL" placeholder="No handphone">
+                <input type="number" id="nomor" placeholder="No handphone">
             </div>
             <div class="grup">
                 <label>Asal kota</label>
-                <input type="text" id="Asal kota" placeholder="Asal kota">
+                <input type="text" id="kota" placeholder="Asal kota">
             </div>
             <div class="long">
                 <label>Isi pesan</label>
-                <textarea placeholder="Isi pesan" rows="5"></textarea>
+                <textarea placeholder="Isi pesan" rows="5" id="pesan"></textarea>
             </div>
                 <button type="submit">KIRIM PESAN</button>
         </form>
     </section>
+    <div class="popup" id="popup">
+        <div class="kotak-popup">
+            <h2>Pesan terkirim</h2>
+            <p>Terimakasih,data kamu sudah kami terima</p>
+            <button id="tutup">OK</button>
+        </div>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
