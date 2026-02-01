@@ -66,7 +66,7 @@ p span{
 .produk{
     margin: 40px 0 20px;
     padding: 0 80px 50px;
-    gap: 50px;
+    gap: 10px;
 }
 .card{
     background: #e7e3e3a6;
@@ -76,11 +76,12 @@ p span{
     border-radius: 15px;
     box-shadow: 0px 15px 15px;
     border: 1px solid rgb(148, 146, 146);
+    flex-wrap: wrap;
 }
 .card img{
     width: 100%;
     border-radius: 10px;
-    height: 400;
+    height: 300;
 }
 .nama{
     font-size: 20px;
@@ -107,6 +108,8 @@ button{
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
 }
 .kontak{
     background: #000;
@@ -135,6 +138,7 @@ button{
 .grup label{
     font-size: 20px;
     margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .grup input,
 .long textarea {
@@ -159,4 +163,60 @@ button{
     background: red;
     font-size: 15px;
     cursor: pointer;
+}
+.navi a{
+    color: rgb(92, 92, 92);
+}
+.tombol{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    background-color: rgb(82, 81, 81);
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    transition: 0.3 ease;
+    cursor: pointer;
+    transform: translateY(20px);
+    visibility: hidden;
+}
+.tombol.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.kotak-popup{
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.popup button{
+    margin-top: 20px;
+    width: 100px;
+}
+.popup.show{
+    opacity: 1;
+    visibility: visible;
+}
+.navi a.active{
+    font-weight: bold;
+    color: black;
 }
