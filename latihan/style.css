@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    box-shadow: 0 8px 20px black;
+    position: relative;
+    z-index: 10;
+}
+.link ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    text-align: right;
+}
+.link li a{
+    text-decoration: none;
+    color: rgba(44, 44, 44, 0.849);
+}
+.logo p{
+    color: rgb(87, 86, 86);
+    font-weight: bold;
+}
+.logo p span{
+    color: rgb(0, 0, 0);
+}
+.container{
+    background: rgb(0, 204, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 210px;
+    padding: 50px 80px;
+}
+.gambar img{
+    width: 300px;
+}
+.promo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 50px;
+}
+.promo p{
+    font-size: 26px;
+    font-weight: bold;
+}
+.promo h5{
+    color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.promo h5 span{
+    color: red;
+}
+.promo button{
+    color: white;
+    background: red;
+    border: none;
+    margin: 50px 0;
+    height: 50px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.kartu{
+    text-align: center;
+    margin: 50px 0;
+}
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.isi img{
+    width: 300px;
+    padding: 0 5px;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+.isi{
+    background: rgb(255, 255, 255);
+    width: 310px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px;
+    margin: 50px;
+}
+.isi h3{
+    text-align: right;
+    margin: 40px 0;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.isi h2{
+    text-align: right;
+    color: red;
+    font-size: 30px;
+}
+.isi p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.isi:hover{
+    color: white;
+    background: rgba(0, 255, 255, 0.733);
+    box-shadow: 0 10px 15px rgb(0, 119, 255);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
